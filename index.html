@@ -19,10 +19,12 @@
         <div class="column is-medium" id="left-column">
             <div class="card has-background-dark">
                 <div class="card-content">
-                    <h3 class="title is-3 has-text-white">Search weather by city</h3>
-                    <div class="field has-addons user-form" id="user-form">
-                        <input class="input is-focused is-medium userInput" type="text" placeholder="Somewhere Over the Rainbow">
-                        <button type="submit" class="button is-success is-medium is-fullwidth has-text-link-light">Search</button>
+                    <div class="field has-addons user-form" id="form">
+                        <h2 class="title is-2 has-text-white" id="errorMessage"></h2>
+                        <h3 class="title is-3 has-text-white">Search weather by city</h3>
+                        <input id="input" class="input is-focused is-medium" type="text" placeholder="Somewhere Over the Rainbow">
+                    </div>    
+                        <input type="submit" class="button is-success is-medium is-fullwidth has-text-link-light" id="button" ></input>
                     </div>
                 </div>
             </div>
@@ -40,7 +42,7 @@
                 <div class="card has-background-dark">
                     <h3 class="title is-3 has-text-white">5 Day Weather Forecast</h3>
                     <span>
-                        
+
                     </span>
                 </div>    
             </section>
