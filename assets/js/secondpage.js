@@ -1,25 +1,36 @@
 var apiKey = "a1cef5ec8d14ee25ac975bd19e5efc49"
-var userFormEl = document.getElementById("#form");
+var userFormEl = document.querySelector(".form");
 var userInputEl = document.getElementById("#input");
 var submitButtonEl = document.querySelector("#button");
-var errorElement = document.getElementById("errorMessage");
+// var errorElement = document.getElementById("errorMessage");
+var modalBg= document.querySelector(".modal-background");
+var modal= document.querySelector(".modal")
+
 var city = "Austin"
 var query = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" +apiKey;
 
 
 
-//add event listener to button click and set the data to pass through the query    
-submitButtonEl.addEventListener('click', function(){
-    console.log("it worked!")
-    // var messages = [];
-    // if (userInputEl = "3" ){
-    //      messages.push('City name is required');
-    //  }
-    //  if (messages.length > 0){
-    //     .preventDefault();
-    //      errorElement.innerText = messages.join (',');
-    // }
-});
+
+//add event listener to button click and set the data to pass through the query
+
+submitButtonEl.addEventListener('click', (getWeatherData)) 
+// {
+//     console.log("button worked!")
+//         if (userInputEl != 0 ) {
+//             console.log("stuff should show up");
+//         } 
+// };
+
+function enableModa(){
+    modal.classList.add("is-active");
+    //then click out of
+    modalBg.addEventListener('click',(removeModal));
+}
+
+function removeModal(){
+    modal.classList.remove("is-active");
+}
 
 //prevent default on click & send error message if not a city name input
 // userFormEl.addEventListener('click', (e) => {
@@ -32,9 +43,6 @@ submitButtonEl.addEventListener('click', function(){
 //         errorElement.innerText = messages.join (',');
 //     }
 // });
-
-// const el = document.getElementById("outside");
-// el.addEventListener("click", modifyText, false);
 
 function getWeatherData(){
     fetch(query)
@@ -67,10 +75,10 @@ function getWeatherData(){
 }
 
        //CURRENT WEATHER from response we need to grab "city_name" = lat & lon,  "date"= ,"icon" or something to set and if/else icon per status, "current_weather" (5 days worth so array from 0 to 4) indicating the following:  "humidity", "wind-speed", "UV index" with indicators of (favorable, moderate, severe),
-      
-       var displayCurrentData = (function(query){})
-    
-      
-      
+
+var displayCurrentData = (function(query){})
+
+
+
        //FUTURE WEATHER from response we need to grab "city_name",  "date","icon" or something to set and if/else icon per status, "current_weather" (5 days worth, so array from 0 to 4) indicating the following:  "humidity", "wind-speed", "UV index" with indicators of (favorable, moderate, severe),
       // var displayFutureData

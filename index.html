@@ -8,46 +8,92 @@
     <title>Wanderlust Weather</title>
 </head>
 <body>
-    <section class="section">
+    <div class="card has-background-light">
         <div class="container">
-          <h1 class="title">
-            Wanderlust Weather
-          </h1>
+            <span>
+                <h1 class="title is-1 is-centered">
+                Wanderlust Weather
+                </h1>
+            </span>    
+        </div>   
+    </div>
+    <form class="field is-medium" id="buttons">
+        <div class="field">
+            <p class="control has-icons-left">
+                <input class="input" type="text" placeholder="Search weather by city" id="input">
+                <i class="fas fa-lock"></i>
+                </span>
+            </p>
         </div>
-      </section>
-      <main class="columns is-desktop">
-        <div class="column is-medium" id="left-column">
+        <div class="field">
+            <p class="control">
+                <button class="button is-success" id="button">
+                    Submit
+                </button>
+            </p>
+        </div>
+    </form>
+    <main>
+    <!-- weather display current -->
+        <section class="section" id="current-weather">
             <div class="card has-background-dark">
-                <div class="card-content">
-                    <div class="field has-addons user-form" id="form">
-                        <h2 class="title is-2 has-text-white" id="errorMessage"></h2>
-                        <h3 class="title is-3 has-text-white">Search weather by city</h3>
-                        <input id="input" class="input is-focused is-medium" type="text" placeholder="Somewhere Over the Rainbow">
-                    </div>    
-                        <input type="submit" class="button is-success is-medium is-fullwidth has-text-link-light" id="button" ></input>
+                <h3 class="title is-3 has-text-white">Current Weather</h3>
+                <span>
+        
+                </span>
+            </div>
+        </section>
+
+    <!-- weather display 5 day forecast columns -->
+        <section class="section" id="future-weather">
+            <div class="card has-background-dark">
+            <h3 class="title is-3 has-text-white">5 Day Weather Forecast</h3>
+            <span>
+            </span>
+            </div>
+            <div class="columns is-desktop">
+                <div class="column is-medium" id="column-1">
+                    <div class="card has-background-dark">
+                    <h4 class="title is-4 has-text-white">Tomorrow</h4>
+                    <span></span>
+                    </div>
+                </div>  
+                <div class="column is-medium" id="column-1">
+                    <div class="card has-background-dark">
+                        <h4 class="title is-4 has-text-white">Day 2</h4>
+                        <span></span>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-
-        <div class= "column" id="right-column">
-            <section class="section">
-                <div class="card has-background-dark">
-                    <h3 class="title is-3 has-text-white">Current Weather</h3> 
-                    <span>
-
-                    </span>
+                <div class="column is-medium" id="column-1">
+                    <div class="card has-background-dark">
+                        <h4 class="title is-4 has-text-white">Day 3</h4>
+                        <span></span>
+                    </div>
                 </div>
-                <div class="card has-background-dark">
-                    <h3 class="title is-3 has-text-white">5 Day Weather Forecast</h3>
-                    <span>
-
-                    </span>
+                <div class="column is-medium" id="column-1">
+                    <div class="card has-background-dark">
+                        <h4 class="title is-4 has-text-white">Day 4</h4>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="column is-medium" id="column-1">
+                    <div class="card has-background-dark">
+                        <h4 class="title is-4 has-text-white">Day 5</h4>
+                        <span></span>
+                    </div>
                 </div>    
-            </section>
-        </di    v>
-      </main>
+        </section>    
+    </main>
+<!-- modal -->
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content has-background-white py-5 px-5">
+                <img src="https://media3.giphy.com/media/13ywPzPJdfhmBG/giphy.gif?cid=ecf05e47cdi6omtzuua7aw5rfapnw68uoeh9cbr8v6lm7q34&rid=giphy.gif&ct=g">
+                <h3 class="title mb-6">Please enter a city name.</h3>
+              <!-- Any other Bulma elements you want -->
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div> 
     </body>
     <script src="../Wanderlust-Weather/assets/js/secondpage.js"></script>
     </html>
