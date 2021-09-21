@@ -1,10 +1,11 @@
 # Wanderlust-Weather
 
 ## Built with: 
-HTML, CSS, JS &nbsp;&nbsp;
+HTML, CSS, Bulma, JS &nbsp;&nbsp;
 
 ## Preview:
-![image](https://media2.giphy.com/media/lNY0a9aJgFcCaDn1nw/giphy.gif?cid=ecf05e47devdcdwhqymvxlc3pra1e52ax82nuc3ulvkesw3h&rid=giphy.gif&ct=g)
+![image](https://user-images.githubusercontent.com/86173119/133958134-a9e08514-74b4-40f7-852a-01da093408cb.png)
+
 
 
 
@@ -18,6 +19,11 @@ HTML, CSS, JS &nbsp;&nbsp;
 
 ## Contributions
 
+CSS and JS script to build dashboard. 
+
+[Open Weather API](https://https://openweathermap.org/api)&nbsp;&nbsp;
+[Bulma Framework](https://bulma.io/) &nbsp;&nbsp;
 
 
 ## Link to deployed application
+https://izztnkr.github.io/Wanderlust-Weather/ 
